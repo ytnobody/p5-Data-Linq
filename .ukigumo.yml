@@ -2,4 +2,4 @@ before_install:
   - "plenv local 5.14"
   - "cpanm -L ./extlib --installdeps --with-develop -n ."
 script:
-  - "prove -Iextlib/lib/perl5 t/"
+  - "prove -Iextlib/lib/perl5 -Ilib t/"
